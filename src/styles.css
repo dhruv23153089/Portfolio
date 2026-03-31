@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 120px;
 }
 
 * {
@@ -26,6 +27,7 @@ body {
   line-height: 1.6;
   background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
   color: var(--text-main);
+  overflow-x: hidden;
 }
 
 a {
@@ -91,6 +93,15 @@ header {
   position: relative;
   padding: 120px 10% 56px;
   animation: fadeIn 1s ease-in;
+}
+
+.home > *,
+.contact-layout > *,
+.project-card,
+.about-card,
+.skill1,
+.contact-card {
+  min-width: 0;
 }
 
 .home {
@@ -405,6 +416,7 @@ header {
 .contact-card a {
   color: #d9f6ff;
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .contact-card a:hover {
@@ -477,8 +489,16 @@ header {
   header {
     padding: 16px 5%;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 10px;
+  }
+
+  .portfolio {
+    text-align: center;
+  }
+
+  .navbar {
+    justify-content: center;
   }
 
   .home,
@@ -523,12 +543,18 @@ header {
 }
 
 @media (max-width: 640px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+
   .portfolio {
     font-size: 26px;
   }
 
   .navbar {
     gap: 14px;
+    width: 100%;
+    justify-content: center;
   }
 
   .navbar a {
@@ -575,5 +601,48 @@ header {
 
   .contact-form {
     padding: 20px;
+  }
+
+  .contact-card {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 420px) {
+  header {
+    padding: 14px 4%;
+  }
+
+  .home,
+  .about,
+  .projects,
+  .skills,
+  .contact {
+    padding: 152px 4% 32px;
+  }
+
+  .contain h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image-frame {
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .hero-image-frame::after {
+    inset: 12px;
+    border-radius: 18px;
+  }
+
+  .hero-highlights span,
+  .project-stack span {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-card-top,
+  .contact-card {
+    gap: 10px;
   }
 }
