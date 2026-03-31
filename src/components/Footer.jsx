@@ -1,7 +1,9 @@
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="site-footer">
-      <p>&copy; 2026 Dhruv Jaiswal. Built with React and focused on clean user experiences.</p>
+      <p>&copy; {currentYear} Dhruv Jaiswal. All rights reserved.</p>
     </footer>
   );
 }

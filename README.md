@@ -1,18 +1,12 @@
-# Portfolio
+# Dhruv Jaiswal Portfolio
 
-This portfolio has been converted from a single HTML/CSS site into a React + Vite project while keeping the same overall layout and styling direction.
+This is my personal portfolio website built to showcase who I am, what I work on, and the kind of projects I enjoy building. I am a Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning, with a strong interest in MERN stack development, full-stack product building, and practical AI/ML applications.
 
-## Run locally
+The portfolio includes:
 
-```bash
-npm install
-npm run dev
-```
+- A home section with a short introduction and resume access
+- An about section covering my background, education, and interests
+- A projects section featuring selected work in web development and AI/ML
+- A contact section for reaching out and connecting
 
-## Structure
-
-- `index.html` bootstraps the React app
-- `src/App.jsx` composes the page sections
-- `src/components/` contains the portfolio sections
-- `src/styles.css` contains the migrated styling
-- `src/assets/` stores the local image asset
+This project is built with React, Vite, and CSS.
